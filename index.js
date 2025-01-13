@@ -21,7 +21,7 @@ function renderTaskOnHTML(taskTitle, done = false) {
             spanToToggle.style.textDecoration = 'none'
         }
 
-        tasks.map (t => {
+        task = tasks.map (t => {
             if (t.title === spanToToggle.textContent){
                 return {
                     title: t.title,
